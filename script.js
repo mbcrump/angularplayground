@@ -4,6 +4,12 @@
 
 // Code goes here
 
-var MainController = function($scope) {
-    $scope.message = "Hello, Michael";
-};
+(function(angular) {
+
+    function MainController($scope) {
+        $scope.message = "Hello, Michael";
+    }
+
+    angular.module("app", []).controller("MainController", ["$scope", MainController]);
+
+})(angular);
