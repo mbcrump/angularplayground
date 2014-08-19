@@ -1,8 +1,9 @@
 /**
  * Created by michaelcrump on 8/17/14.
  */
-var MainController = function($scope){
 
-    $scope.message = "Hello, Angular";
+// Code goes here
 
+var MainController = function($scope) {
+    $scope.message = "Hello, Michael";
 };
