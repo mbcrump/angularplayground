@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app xmlns="http://www.w3.org/1999/html">
 
 <head>
     <script data-require="angular130b18.js@*" src="angular130b5.js"></script>
@@ -10,9 +10,10 @@
 </head>
 <h1>Angular Playground #2</h1>
 
-<body ng-app>
+<body>
 <div ng-controller="MainController">
-    {{message}}
+    {{message}} <br>
+    Total Length: {{message.length}}
 </div>
 </body>
 
