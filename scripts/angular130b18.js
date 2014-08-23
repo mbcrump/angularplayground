@@ -1315,7 +1315,7 @@ function getNgAttribute(element, ngAttr) {
      I can add: {{a}} + {{b}} =  {{ a+b }}
    </div>
    </file>
-   <file name="script.js">
+   <file name="script02.js">
    angular.module('ngAppDemo', []).controller('ngAppDemoController', function($scope) {
      $scope.a = 1;
      $scope.b = 2;
@@ -1333,7 +1333,7 @@ function getNgAttribute(element, ngAttr) {
 
            <p>This renders because the controller does not fail to
               instantiate, by using explicit annotation style (see
-              script.js for details)
+              script02.js for details)
            </p>
        </div>
 
@@ -1343,7 +1343,7 @@ function getNgAttribute(element, ngAttr) {
 
            <p>This renders because the controller does not fail to
               instantiate, by using explicit annotation style
-              (see script.js for details)
+              (see script02.js for details)
            </p>
        </div>
 
@@ -1358,7 +1358,7 @@ function getNgAttribute(element, ngAttr) {
        </div>
    </div>
    </file>
-   <file name="script.js">
+   <file name="script02.js">
    angular.module('ngAppStrictDemo', [])
      // BadController will fail to instantiate, due to relying on automatic function annotation,
      // rather than an explicit annotation
@@ -4133,7 +4133,7 @@ createInjector.$$annotate = annotate;
          <a id="bottom"></a> You're at the bottom!
        </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
        angular.module('anchorScrollExample', [])
          .controller('ScrollController', ['$scope', '$location', '$anchorScroll',
            function ($scope, $location, $anchorScroll) {
@@ -4912,7 +4912,7 @@ function $BrowserProvider(){
          </div>
        </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
        angular.module('cacheExampleApp', []).
          controller('CacheController', ['$scope', '$cacheFactory', function($scope, $cacheFactory) {
            $scope.keys = [];
@@ -7522,7 +7522,7 @@ function $ControllerProvider() {
          <p>window.document title: <b ng-bind="windowTitle"></b></p>
        </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
        angular.module('documentExample', [])
          .controller('ExampleController', ['$scope', '$document', function($scope, $document) {
            $scope.title = $document[0].title;
@@ -8130,7 +8130,7 @@ function $HttpProvider() {
     <pre>http response data: {{data}}</pre>
   </div>
 </file>
-<file name="script.js">
+<file name="script02.js">
   angular.module('httpExample', [])
     .controller('FetchController', ['$scope', '$http', '$templateCache',
       function($scope, $http, $templateCache) {
@@ -10182,7 +10182,7 @@ function $LocationProvider(){
  *
  * @example
    <example module="logExample">
-     <file name="script.js">
+     <file name="script02.js">
        angular.module('logExample', [])
          .controller('LogController', ['$scope', '$log', function($scope, $log) {
            $scope.$log = $log;
@@ -13963,7 +13963,7 @@ function $SceDelegateProvider() {
  *   </div>
  * </file>
  *
- * <file name="script.js">
+ * <file name="script02.js">
  *   angular.module('mySceApp', ['ngSanitize'])
  *     .controller('AppController', ['$http', '$templateCache', '$sce',
  *       function($http, $templateCache, $sce) {
@@ -14842,7 +14842,7 @@ function $WindowProvider(){
        </div>
      </file>
 
-     <file name="script.js">
+     <file name="script02.js">
       angular.module('filterExample', [])
       .controller('MainCtrl', function($scope, $filter) {
         $scope.originalText = 'hello';
@@ -15843,7 +15843,7 @@ function limitToFilter(){
       </div>
     </file>
 
-    <file name="script.js">
+    <file name="script02.js">
       angular.module('orderByExample', [])
         .controller('ExampleController', ['$scope', '$filter', function($scope, $filter) {
           var orderBy = $filter('orderBy');
@@ -18370,7 +18370,7 @@ var VALID_CLASS = 'ng-valid',
       }
 
     </file>
-    <file name="script.js">
+    <file name="script02.js">
       angular.module('customControl', ['ngSanitize']).
         directive('contenteditable', ['$sce', function($sce) {
           return {
@@ -19775,7 +19775,7 @@ var ngBindTemplateDirective = ['$interpolate', function($interpolate) {
        </div>
      </file>
 
-     <file name="script.js">
+     <file name="script02.js">
        angular.module('bindHtmlExample', ['ngSanitize'])
          .controller('ExampleController', ['$scope', function($scope) {
            $scope.myHTML =
@@ -21160,7 +21160,7 @@ var ngIfDirective = ['$animate', function($animate) {
        </div>
      </div>
     </file>
-    <file name="script.js">
+    <file name="script02.js">
       angular.module('includeExample', ['ngAnimate'])
         .controller('ExampleController', ['$scope', function($scope) {
           $scope.templates =
@@ -22547,7 +22547,7 @@ var ngStyleDirective = ngDirective(function(scope, element, attr) {
         </div>
       </div>
     </file>
-    <file name="script.js">
+    <file name="script02.js">
       angular.module('switchExample', ['ngAnimate'])
         .controller('ExampleController', ['$scope', function($scope) {
           $scope.items = ['settings', 'home', 'other'];

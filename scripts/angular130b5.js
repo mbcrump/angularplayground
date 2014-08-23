@@ -1289,7 +1289,7 @@
      I can add: {{a}} + {{b}} =  {{ a+b }}
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      angular.module('ngAppDemo', []).controller('ngAppDemoController', function($scope) {
      $scope.a = 1;
      $scope.b = 2;
@@ -3981,7 +3981,7 @@
      <a id="bottom"></a> You're at the bottom!
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      function ScrollCtrl($scope, $location, $anchorScroll) {
          $scope.gotoBottom = function (){
            // set the location.hash to the id of
@@ -4764,7 +4764,7 @@
      </div>
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      angular.module('cacheExampleApp', []).
      controller('CacheController', ['$scope', '$cacheFactory', function($scope, $cacheFactory) {
            $scope.keys = [];
@@ -7223,7 +7223,7 @@
      <p>window.document title: <b ng-bind="windowTitle"></b></p>
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      function MainCtrl($scope, $document) {
          $scope.title = $document[0].title;
          $scope.windowTitle = angular.element(window.document)[0].title;
@@ -7878,7 +7878,7 @@
                  <pre>http response data: {{data}}</pre>
                  </div>
                  </file>
-                 <file name="script.js">
+                 <file name="script02.js">
                  function FetchCtrl($scope, $http, $templateCache) {
     $scope.method = 'GET';
     $scope.url = 'http-hello.html';
@@ -9704,7 +9704,7 @@
      *
      * @example
      <example>
-     <file name="script.js">
+     <file name="script02.js">
      function LogCtrl($scope, $log) {
          $scope.$log = $log;
          $scope.message = 'Hello World!';
@@ -13547,7 +13547,7 @@
      </div>
      </file>
 
-     <file name="script.js">
+     <file name="script02.js">
      var mySceApp = angular.module('mySceApp', ['ngSanitize']);
 
      mySceApp.controller("myAppController", function myAppController($http, $templateCache, $sce) {
@@ -17770,7 +17770,7 @@
       }
 
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      angular.module('customControl', []).
      directive('contenteditable', function() {
           return {
@@ -18583,7 +18583,7 @@
      </div>
      </file>
 
-     <file name="script.js">
+     <file name="script02.js">
      angular.module('ngBindHtmlExample', ['ngSanitize'])
 
      .controller('ngBindHtmlCtrl', ['$scope', function ngBindHtmlCtrl($scope) {
@@ -19899,7 +19899,7 @@
      </div>
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      function Ctrl($scope) {
         $scope.templates =
           [ { name: 'template1.html', url: 'template1.html'},
@@ -21264,7 +21264,7 @@
      </div>
      </div>
      </file>
-     <file name="script.js">
+     <file name="script02.js">
      function Ctrl($scope) {
         $scope.items = ['settings', 'home', 'other'];
         $scope.selection = $scope.items[0];
