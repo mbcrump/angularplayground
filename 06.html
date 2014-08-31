@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <script data-require="angular130b18.js@*" src="scripts/angular130b18.js"></script>
+    <script src="scripts/script06.js"></script>
+</head>
+<h1>Angular Playground #6</h1>
+
+<body>
+<div ng-controller="MainController">
+    <h1>{{message}}</h1>
+
+    <div>{{error}}</div>
+
+    <form name="searchUser" ng-submit="search(username)">
+
+        <input type="search" required placeholder="Username to find" ng-model="username" />
+        <input type="submit" value="Search">
+
+        <!--<input type="submit" value="Search" ng-click="search(username)">-->
+        <!-- could use a click event -->
+
+    </form>
+
+    <div>
+        <div>Name: {{user.name}}</div>
+        <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="repo in repos">
+            <td>{{repo.name}}</td>
+            <td>{{repo.stargazers_count | number}}</td>
+           <!-- <td>{{repo.stargazers_count | number}}</td>
+            Could add filters with | number:1-->
+            <td>{{repo.language}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+
+</html>
