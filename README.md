@@ -3,6 +3,8 @@ AngularJS Playground
 
 by: Michael Crump 
 
-http://twitter.com/mbcrump
+[Twitter](http://twitter.com/mbcrump)
 
-http://michaelcrump.net
+[Blog](http://michaelcrump.net)
+
+[About Me](http://about.me/mbcrump)
