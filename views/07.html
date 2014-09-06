@@ -3,9 +3,9 @@
 
 <head>
     <script src="../angular/angular1.3.0-rc.0.js"></script>
-    <script src="../scripts/script06.js"></script>
+    <script src="../scripts/script07.js"></script>
 </head>
-<h1>Angular Playground #6</h1>
+<h1>Angular Playground #7</h1>
 
 <body>
 <div ng-controller="MainController">
@@ -23,12 +23,19 @@
 
     </form>
 
-    <div>
+    <div ng-show="user">
         <div>Name: {{user.name}}</div>
         <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}">
+        Order:
+        <select ng-model="repoSortOrder">
+            <option value="+name">Name: </option>
+            <option value="-stargazers_count">Stars </option>
+            <option value="+language">Languages: </option>
+        </select>
     </div>
 
-    <table>
+
+    <table ng-hide="!user">
         <thead>
         <tr>
             <th>Name</th>
@@ -37,7 +44,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="repo in repos | orderBy:'-stargazers_count'">
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
             <td>{{repo.name}}</td>
             <td>{{repo.stargazers_count | number}}</td>
            <!-- <td>{{repo.stargazers_count | number}}</td>
