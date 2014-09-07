@@ -1,4 +1,4 @@
-AngularJS Playground
+####AngularJS Playground
 ================
 
 by: Michael Crump 
@@ -8,3 +8,5 @@ by: Michael Crump
 [Blog](http://michaelcrump.net)
 
 [About Me](http://about.me/mbcrump)
+
+[TRY IT NOW](https://rawgit.com/mbcrump/angularplayground/master/index.html)
