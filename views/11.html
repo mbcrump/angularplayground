@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <script src="../angular/angular1.3.0-rc.0.js"></script>
+    <script src="../scripts/script11.js"></script>
+</head>
+<h1>Angular Playground #9</h1>
+
+<body>
+<div ng-controller="MainController">
+    <h1>{{message}}</h1>
+
+    <div>{{error}}</div>
+
+    {{ countdown }}
+
+    <form name="searchUser" ng-submit="search(username)">
+
+        <input type="search" required placeholder="Username to find" ng-model="username" />
+        <input type="submit" value="Search">
+
+    </form>
+
+    <div ng-include="'../views/userdetails11.html'" ng-show="user"></div>
+
+
+</div>
+</body>
+
+</html>
