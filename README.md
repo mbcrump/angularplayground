@@ -9,4 +9,4 @@ by: Michael Crump
 
 [About Me](http://about.me/mbcrump)
 
-[TRY IT NOW](https://rawgit.com/mbcrump/angularplayground/master/index.html)
+[Demos](https://rawgit.com/mbcrump/angularplayground/master/index.html)
