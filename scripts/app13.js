@@ -8,7 +8,7 @@
                 templateUrl: "main13.html",
                 controller: "MainController"
             })
-        .otherwise({redirectto:"/main"});
+        .otherwise({redirectTo:"/main"});
 
     });
 
