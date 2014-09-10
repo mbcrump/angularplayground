@@ -22,6 +22,7 @@
                 $interval.cancel(countdownInterval);
                 $scope.countdown = null;
             }
+            //Added this one line
             $location.path("/user/" + username);
 
         };
