@@ -22,7 +22,7 @@
                 $interval.cancel(countdownInterval);
                 $scope.countdown = null;
             }
-            $location.path("/users/" + username);
+            $location.path("/user/" + username);
 
         };
 
