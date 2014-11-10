@@ -1,3 +1,5 @@
+//We have only added a function to take the data from the input box and append it to the Github API call.
+
 (function(angular) {
 
 
