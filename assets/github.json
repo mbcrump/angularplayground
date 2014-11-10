@@ -1,8 +1,8 @@
 {
     "login": "mbcrump",
     "id": 534885,
-    "avatar_url": "https://avatars.githubusercontent.com/u/534885?v=2",
-    "gravatar_id": "bc4ba4e314fc7f2585957898fcc78a76",
+    "avatar_url": "https://avatars.githubusercontent.com/u/534885?v=3",
+    "gravatar_id": "",
     "url": "https://api.github.com/users/mbcrump",
     "html_url": "https://github.com/mbcrump",
     "followers_url": "https://api.github.com/users/mbcrump/followers",
@@ -23,10 +23,10 @@
     "email": "mbcrump29@gmail.com",
     "hireable": false,
     "bio": null,
-    "public_repos": 34,
+    "public_repos": 40,
     "public_gists": 7,
     "followers": 4,
     "following": 0,
     "created_at": "2010-12-23T19:00:17Z",
-    "updated_at": "2014-09-07T23:54:26Z"
+    "updated_at": "2014-11-10T19:40:18Z"
 }
