@@ -1,8 +1,4 @@
-/**
- * Created by michaelcrump on 8/17/14.
- */
-
-// Code goes here
+//Change the $scope.message to say something else.
 
 (function(angular) {
 

@@ -1,8 +1,4 @@
-/**
- * Created by michaelcrump on 8/17/14.
- */
-
-// Code goes here
+//We declare a variable named person and populate several fields as well as add it to our $scope
 
 
 
