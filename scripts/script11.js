@@ -1,3 +1,6 @@
+//We've added an anchor scroll and a location to automatically scroll to the data.
+//See onRepos function the $location.has("userDetails")
+
 (function(angular) {
 
 

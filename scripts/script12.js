@@ -1,3 +1,6 @@
+//Notice that we have added a angular.module to githubViewer.
+//We've also modified our function to include github.
+
 (function() {
 
     var app = angular.module("githubViewer", []);
