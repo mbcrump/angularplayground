@@ -13,7 +13,6 @@
     function MainController($scope) {
         $scope.message = "Hello, Michael";
         $scope.person = person;
-
     }
 
     angular.module("app", []).controller("MainController", ["$scope", MainController]);
