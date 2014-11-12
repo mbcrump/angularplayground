@@ -1,6 +1,5 @@
 (function(angular) {
 
-
     function MainController($scope, $http) {
         $scope.message = "Github User Lookup";
 
@@ -22,8 +21,6 @@
             $http.get("https://api.github.com/users/" + username)
                 .then(onUserComplete, onError);
         };
-
-
     }
 
     angular.module("app", []).controller("MainController", ["$scope", "$http", MainController]);
