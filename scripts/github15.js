@@ -16,9 +16,17 @@
                 });
         };
 
+        var getAuthenticated = function(){
+            return $http.get("https://api.github.com/?access_token=20d78ba0c1ad962ce9b2c3ea12156a0b6baab65e")
+                .then(function(response){
+                    return response.data;
+                });
+        };
+
         var getRepoDetails = function(username, reponame){
             var repo;
             var repoUrl = "https://api.github.com/repos/" + username + "/" + reponame;
+            getAuthenticated();
 
             return $http.get(repoUrl)
                 .then(function(response){
