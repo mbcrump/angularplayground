@@ -23,7 +23,6 @@
                 $scope.countdown = null;
             }
 
-
         };
 
         $scope.username = "angular";
