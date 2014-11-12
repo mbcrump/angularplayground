@@ -1,3 +1,5 @@
+//We've refactored the countdown logic.
+
 (function(angular) {
 
 

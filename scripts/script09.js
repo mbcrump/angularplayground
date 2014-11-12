@@ -1,3 +1,5 @@
+//Notice $interval has been added to our MainController function.
+
 (function(angular) {
 
 
