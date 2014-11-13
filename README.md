@@ -1,12 +1,10 @@
-####AngularJS Playground
+####AngularJS Workshop
 ================
 
-by: Michael Crump 
+by: Michael Crump / TJ Van Toll
 
-[Twitter](http://twitter.com/mbcrump)
+[Michael's Twitter](http://twitter.com/mbcrump)[TJ's Twitter](http://twitter.com/tjvantoll)
 
-[Blog](http://michaelcrump.net)
-
-[About Me](http://about.me/mbcrump)
+[Michael's Blog](http://michaelcrump.net)[TJ's Blog](http://tjvantoll.com/)
 
 [Demos](https://rawgit.com/mbcrump/angularplayground/master/index.html)
