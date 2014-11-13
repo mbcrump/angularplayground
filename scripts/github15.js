@@ -26,6 +26,10 @@
             return $http.get(url);
         };
 
+        var getCollaborators = function(url) {
+            return $http.get(url + "/collaborators");
+        };
+
         var getRepoDetails = function(username, reponame){
             var repo;
             var repoUrl = "https://api.github.com/repos/" + username + "/" + reponame;
@@ -35,10 +39,10 @@
                 .then(function() {
                     getRepo(repoUrl)
                     .then(function() {
-                        $http.get(repoUrl + "/collaborators")
-                            .then(function(response) {
-                                deferred.resolve(response.data);
-                            });
+                        getCollaborators(repoUrl)
+                        .then(function(response) {
+                            deferred.resolve(response.data);
+                        });
                     });
                 });
 
