@@ -1,6 +1,8 @@
 (function(){
 
-    var github = function($http){
+    var github = function($http, $q){
+
+        console.log($q);
 
         var getUser = function(username){
             return $http.get("https://api.github.com/users/" + username)
@@ -18,25 +20,29 @@
 
         var getAuthenticated = function(){
             return $http.get("https://api.github.com/?access_token=20d78ba0c1ad962ce9b2c3ea12156a0b6baab65e")
-                .then(function(response){
-                    return response.data;
-                });
+        };
+
+        var getRepo = function(url) {
+            return $http.get(url);
         };
 
         var getRepoDetails = function(username, reponame){
             var repo;
             var repoUrl = "https://api.github.com/repos/" + username + "/" + reponame;
-            getAuthenticated();
+            var deferred = $q.defer();
 
-            return $http.get(repoUrl)
-                .then(function(response){
-                    repo = response.data;
-                    return $http.get(repoUrl + "/collaborators");
-                })
-                .then(function(response){
-                    repo.collaborators = response.data;
-                    return repo;
+            getAuthenticated()
+                .then(function() {
+                    getRepo(repoUrl)
+                    .then(function() {
+                        $http.get(repoUrl + "/collaborators")
+                            .then(function(response) {
+                                deferred.resolve(response.data);
+                            });
+                    });
                 });
+
+            return deferred;
         };
 
         return {
