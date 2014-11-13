@@ -2,6 +2,8 @@
 
     var github = function($http, $q){
 
+        console.log($q);
+
         var getUser = function(username){
             return $http.get("https://api.github.com/users/" + username)
                 .then(function(response){
@@ -44,7 +46,7 @@
                     });
                 });
 
-            return deferred.promise;
+            return deferred;
         };
 
         return {
@@ -56,6 +58,6 @@
     };
 
     var module = angular.module("githubViewer");
-    module.factory("github", github, ["$http", "$q"]);
+    module.factory("github", github);
 
 }());
