@@ -10,7 +10,7 @@
         };
 
         var onRepos = function(response){
-          $scope.repos = response.data;
+            $scope.repos = response.data;
         };
 
         var onError = function(reason){
