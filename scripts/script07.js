@@ -3,7 +3,7 @@
     function MainController($scope, $http) {
         $scope.message = "Github User Lookup";
         $scope.username = "mbcrump";
-        $scope.repoSortOrder = "stargazers_count"
+        $scope.repoSortOrder = "stargazers_count";
 
         var onUserComplete = function(response){
             $scope.user = response.data;
